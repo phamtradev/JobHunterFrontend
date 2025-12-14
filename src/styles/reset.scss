@@ -1,0 +1,139 @@
+.ant-pro-footer-bar {
+    z-index: 1000;
+    background-color: white;
+}
+
+.ant-menu-horizontal {
+    border-bottom: unset !important;
+}
+
+.ql-editor {
+    min-height: 350px !important;
+    overflow: hidden;
+}
+
+.modal-company {
+    &.close {
+        transform: scale(0);
+        opacity: 0;
+        -webkit-transition: all .1s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+}
+
+.modal-company-root {
+    &.close {
+        .ant-modal-mask {
+            background-color: unset !important;
+            // -webkit-transition: background-color 0.3s ease-in;
+            // /* Safari */
+            // transition: background-color 0s linear;
+            // -webkit-transition-delay: 0.3s;
+            // /* Safari */
+            // transition-delay: 0.2s;
+        }
+    }
+}
+
+.customize-form-item {
+    .ant-form-item {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* Header menu keep white text on hover/active */
+.header-menu {
+    background: transparent !important;
+}
+.header-menu .ant-menu-item,
+.header-menu .ant-menu-submenu-title {
+    color: #e2e8f0 !important;
+    background: transparent !important;
+}
+.header-menu .ant-menu-item:hover,
+.header-menu .ant-menu-item-active,
+.header-menu .ant-menu-item-selected,
+.header-menu .ant-menu-submenu-selected,
+.header-menu .ant-menu-submenu-title:hover {
+    color: #ffffff !important;
+    background: transparent !important;
+}
+.header-menu .ant-menu-overflow-item-rest {
+    color: #e2e8f0 !important;
+}
+
+.logo-spin {
+    animation: spin 20s linear infinite;
+}
+
+.no-hover-btn:hover,
+.no-hover-btn:focus,
+.no-hover-btn:active {
+    color: inherit !important;
+    background-color: inherit !important;
+    box-shadow: inherit !important;
+}
+
+.cta-static {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #1d4ed8;
+    color: #ffffff !important;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    text-decoration: none !important;
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+}
+.cta-static:hover,
+.cta-static:focus,
+.cta-static:active,
+.cta-static:visited {
+    background-color: #1d4ed8 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+}
+
+.snow-overlay {
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.snow-flake {
+    position: absolute;
+    top: -10%;
+    background: transparent;
+    color: #60a5fa; /* blue-400 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 8px rgba(96, 165, 250, 0.6);
+    font-weight: 700;
+    animation-name: snow-fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes snow-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.4;
+    }
+}
