@@ -27,6 +27,18 @@ jobs:
           pwd
           echo "Files in workspace:"
           ls -la
+          echo "Check package.json:"
+          if [ -f "package.json" ]; then
+            echo "✓ package.json exists"
+            cat package.json | head -5
+          else
+            echo "✗ package.json NOT FOUND"
+          fi
+          if [ -f "package-lock.json" ]; then
+            echo "✓ package-lock.json exists"
+          else
+            echo "✗ package-lock.json NOT FOUND"
+          fi
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
